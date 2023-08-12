@@ -1,0 +1,81 @@
+// aboutUs
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  margin: 24px 0;
+
+  @media screen and (min-width: $window__width_pad) {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 32px 24px;
+    width: auto;
+  }
+
+  @media screen and (min-width: $window__width_desktop) {
+    margin: 20px 32px;
+  }
+
+  .aboutUs__box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $window__width_pad) {
+      margin: 0;
+      justify-content: flex-start;
+      width: 50%;
+      line-height: 20px;
+    }
+
+    @media screen and (min-width: $window__width_desktop) {
+      width: 50%;
+    }
+
+    .aboutUs__content {
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (min-width: $window__width_pad) {
+        margin-right: 36px;
+      }
+
+      .aboutUs__text {
+        margin: 0;
+        margin-bottom: 20px;
+        color: $color__black;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+      }
+
+      .hidden {
+        display: none;
+      }
+    }
+  }
+
+  .aboutUs__logo {
+    width: 100%;
+
+    @media screen and (min-width: $window__width_pad) {
+      width: 50%;
+    }
+
+    .aboutUs__image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+
+      @media screen and (min-width: $window__width_pad) {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        object-fit: cover;
+      }
+    }
+  }
+}

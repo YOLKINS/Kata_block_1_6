@@ -1,0 +1,64 @@
+// title
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  margin-top: 24px;
+
+  @media screen and (min-width: $window__width_desktop) {
+    margin-top: 42px;
+  }
+
+  .title__left-side {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .title__highlight-icon {
+      background: url('../img/highlight.svg');
+
+      display: flex;
+      font-size: 0;
+      width: 4px;
+      height: 40px;
+    }
+
+    .title__box {
+      display: flex;
+      margin-left: 12px;
+
+      @media screen and (min-width: $window__width_pad) {
+        margin-left: 20px;
+      }
+
+      @media screen and (min-width: $window__width_desktop) {
+        margin-left: 28px;
+      }
+    }
+
+    .title__text {
+      font-size: 28px;
+      font-family: 'TT Lakes Bold', sans-serif;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: -0.6px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .title__right-side {
+    display: none;
+
+    @media screen and (min-width: $window__width_desktop) {
+      display: flex;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+}

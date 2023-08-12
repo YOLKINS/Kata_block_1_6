@@ -1,0 +1,58 @@
+// main-menu
+
+.main-menu {
+  .main-menu__list {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .main-menu__element {
+    margin-bottom: 24px;
+    margin-left: 16px;
+
+    @media screen and (min-width: $window__width_pad) {
+      margin-bottom: 28px;
+      margin-left: 24px;
+    }
+
+    &:first-child {
+      .main-menu__link {
+        span {
+          color: $color__brown;
+        }
+      }
+    }
+
+    .main-menu__link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .main-menu__text {
+      color: $color__black;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+    }
+  }
+
+  .main-menu__highlight {
+    position: absolute;
+    left: 0;
+    top: -5px;
+
+    background-image: url('../img/highlight-small.svg');
+    background-repeat: no-repeat;
+
+    height: 32px;
+    width: 4px;
+  }
+}

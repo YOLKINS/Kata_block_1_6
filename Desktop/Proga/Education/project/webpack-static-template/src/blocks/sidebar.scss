@@ -1,0 +1,56 @@
+// sidebar
+
+.sidebar {
+  position: fixed;
+
+  background-color: $color__white;
+  box-shadow: 16px 0px 52px 0px $color__box-shadow_sidebar;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+  overflow-y: auto;
+  cursor: default;
+
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $window__width_pad) {
+    position: static;
+    left: 0;
+    top: 0;
+    width: 320px;
+  }
+
+  @media screen and (min-width: $window__width_desktop) {
+    margin-top: 16px;
+  }
+
+  .container {
+    margin-top: 30px;
+    position: relative;
+    background: $color__white;
+    //flex-grow: 1;
+    @media screen and (min-width: $window__width_desktop) {
+      margin-top: 20px;
+    }
+  }
+
+  .header__menu_left {
+    .header__element {
+      &:first-child {
+        @media screen and (min-width: $window__width_desktop) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .sidebar__footer {
+    margin: 0;
+    margin-top: 100px;
+    padding: 0;
+    margin-left: 24px;
+  }
+}

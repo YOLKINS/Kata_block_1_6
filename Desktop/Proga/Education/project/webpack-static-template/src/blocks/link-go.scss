@@ -1,0 +1,14 @@
+// link-go
+
+.link-go {
+  background-image: url('../img/go.svg');
+
+  width: 40px;
+  height: 40px;
+}
+
+.link-go:hover {
+  border-radius: 50%;
+  box-shadow: 0px 0px 25px 0.5px $color__pink;
+  background-color: $color__gray;
+}

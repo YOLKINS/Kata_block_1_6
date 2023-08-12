@@ -1,0 +1,31 @@
+// button-pink
+
+.button-pink {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 62, 121, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    animation-name: box-shadow;
+    animation-timing-function: ease;
+    animation-delay: 200ms;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+
+    img {
+      transition-property: transform;
+      transition-duration: 1.5s;
+      transition-delay: 100ms;
+      transform: scale(0.85);
+    }
+  }
+}

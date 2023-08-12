@@ -1,0 +1,73 @@
+// header
+.header {
+  display: flex;
+  padding: 0 16px; // в будущем можно попробовать rem
+  align-content: center;
+  justify-content: center;
+
+  height: 88px;
+  //box-sizing: content-box;
+
+  background-color: $color__white;
+  box-shadow: 0 1px 3px $color__line_blue;
+
+  @media screen and (min-width: $window__width_pad) {
+    padding: 0 24px;
+  }
+
+  @media screen and (min-width: $window__width_desktop) {
+    display: none;
+  }
+
+  .header__menu_left {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    width: 50%;
+    height: 88px;
+
+    .header__element {
+      margin-right: 16px;
+
+      @media screen and (min-width: $window__width_pad) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .header__menu_right {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    width: 50%;
+    height: 88px;
+
+    .hidden {
+      display: none;
+
+      @media screen and (min-width: $window__width_pad) {
+        display: flex;
+      }
+    }
+
+    .header__element {
+      margin-left: 16px;
+    }
+  }
+
+  .header__element {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__divider {
+    background: url('../img/divider.svg');
+
+    width: 2px;
+    height: 32px;
+
+    @media screen and (min-width: $window__width_pad) {
+      margin: 0 4px;
+    }
+  }
+}

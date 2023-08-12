@@ -1,0 +1,66 @@
+// footer
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 16px 16px;
+
+  @media screen and (min-width: $window__width_pad) {
+    margin: 32px 24px;
+    flex-direction: row;
+    align-content: center;
+  }
+
+  @media screen and (min-width: $window__width_desktop) {
+    margin: 32px 32px;
+  }
+
+  .footer__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $window__width_pad) {
+      &:last-child {
+        width: 30vw;
+      }
+    }
+
+    @media screen and (min-width: $window__width_desktop) {
+      &:last-child {
+        width: 23vw;
+      }
+    }
+
+    &:first-child {
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (min-width: $window__width_pad) {
+        align-items: flex-start;
+      }
+    }
+
+    &:last-child {
+      @media screen and (min-width: $window__width_pad) {
+        .footer__text {
+          text-align: end;
+        }
+      }
+    }
+
+    .footer__text {
+      text-align: center;
+
+      color: #7e7e82;
+      font-family: 'TT Lakes Medium';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+    }
+  }
+}

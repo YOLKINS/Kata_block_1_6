@@ -1,0 +1,43 @@
+// open
+
+.open {
+  display: inline-block;
+
+  .open__btn {
+    display: flex;
+    align-items: center;
+
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    .open__arrow {
+      background-image: url('../img/expand.svg');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      height: 24px;
+      width: 24px;
+
+      padding: 0;
+      margin-right: 8px;
+    }
+
+    .open__arrow_active {
+      transform: rotate(180deg);
+      transition: 1s all ease;
+    }
+
+    .open__text {
+      margin: 0;
+      color: $color__black;
+      font-family: 'TT Lakes Medium';
+      font-size: 16px;
+      font-style: normal;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+    }
+  }
+}

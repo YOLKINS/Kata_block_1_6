@@ -1,0 +1,17 @@
+body {
+  background-color: $color__main_white;
+  padding: 0;
+  margin: 0;
+
+  font-family: 'TT Lakes Regular', sans-serif;
+
+  @media screen and (min-width: $window__width_desktop) {
+    display: flex;
+  }
+
+  main {
+    @media screen and (min-width: $window__width_desktop) {
+      flex: 1;
+    }
+  }
+}

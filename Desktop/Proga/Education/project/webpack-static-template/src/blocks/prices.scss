@@ -1,0 +1,124 @@
+// prices
+.prices {
+  &_320 {
+    @media screen and (min-width: $window__width_pad) {
+      display: none !important;
+    }
+  }
+
+  &_768 {
+    display: none;
+
+    @media screen and (min-width: $window__width_pad) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-bottom: 24px;
+    }
+  }
+
+  .button-pink {
+    width: 119px;
+    height: 32px;
+    border-radius: 16px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .prices__card {
+    min-width: 260px;
+    max-width: 260px;
+    height: 200px;
+    border-radius: 6px;
+    border: 1px solid $color__gray_border;
+    background: $color__white;
+
+    padding: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    .button-pink {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-right: 16px;
+      margin-bottom: 16px;
+    }
+
+    .prices__content {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .prices__title {
+    color: $color__brown;
+    font-family: 'TT Lakes Medium';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+  }
+
+  .prices__text {
+    color: $color__black;
+    font-family: 'TT Lakes Regular';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+  }
+
+  .prices__box {
+    padding: 0 16px;
+    background: $color__white;
+    border-radius: 6px;
+
+    @media screen and (min-width: $window__width_desktop) {
+      padding: 0px 24px;
+    }
+
+    &:first-child {
+      background: $color__main_white;
+      border-radius: 0px;
+
+      .button-pink {
+        visibility: hidden;
+      }
+
+      .prices__content {
+        padding-top: 0;
+        border-bottom: 0;
+      }
+    }
+
+    .prices__content {
+      display: flex;
+      flex-direction: row;
+      padding: 16px 0;
+
+      border-bottom: 1px solid $color__gray_border;
+
+      &_left-side {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50%;
+      }
+
+      &_right-side {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+// contacts
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .contacts__links {
+        display: flex;
+        margin-bottom: 16px;
+    }
+
+    .contacts__button {
+        margin-right: 16px;
+    }
+
+    .contacts__mail {
+        margin-bottom: 12px;
+
+        .contacts__text {
+            color: $color__black;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+        
+            text-decoration: none;
+        }
+    }
+
+    .contacts__phone-number {
+        margin-bottom: 8px;
+
+        .contacts__text {
+            color: $color__black;
+            font-size: 24px;
+            font-family: 'TT Lakes Bold', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: -0.6px;
+        
+            text-decoration: none;
+        }
+    }
+}

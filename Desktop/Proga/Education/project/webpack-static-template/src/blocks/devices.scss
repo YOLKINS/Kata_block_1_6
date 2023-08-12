@@ -1,0 +1,48 @@
+// devices
+
+.devices {
+  .devices__card {
+    min-width: 240px;
+    height: 160px;
+
+    border-radius: 6px;
+    background: $color__white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 16px 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+
+    @media screen and (min-width: $window__width_pad) {
+      margin-right: 24px;
+      margin-bottom: 24px;
+      width: 224px;
+    }
+
+    @media screen and (min-width: $window__width_desktop) {
+      margin-right: 32px;
+      width: 240px;
+    }
+
+    .link-go {
+      align-self: flex-end; // could try to use position: absolute if don't work
+    }
+
+    .devices__name {
+      align-self: flex-start; // could try to use position: absolute if don't work
+
+      .devices__text {
+        color: $color__black;
+        font-family: 'TT Lakes Medium';
+        font-size: 16px;
+        font-style: normal;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+      }
+    }
+  }
+}

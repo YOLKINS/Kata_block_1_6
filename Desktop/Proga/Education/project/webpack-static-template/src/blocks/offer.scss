@@ -1,0 +1,28 @@
+// offer
+
+.offer {
+  .offer__link {
+    text-decoration: none;
+    color: $color__black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    .offer__text {
+      overflow-wrap: break-word;
+
+      color: $color__black;
+      font-family: 'TT Lakes Medium';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+    }
+
+    .offer__arrow {
+      width: 24px;
+      height: auto;
+    }
+  }
+}

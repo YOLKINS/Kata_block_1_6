@@ -1,0 +1,26 @@
+// service
+
+.service {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 32px;
+
+  .service__option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .service__text {
+    display: flex;
+    margin-right: 8px;
+    margin-left: 32px;
+
+    color: $color__black;
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+}

@@ -1,0 +1,23 @@
+// order-go
+
+.order-go {
+  .order-go__text {
+    color: $color__white;
+    font-family: 'TT Lakes Bold';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+  }
+
+  .order-go__arrow {
+    width: 24px;
+    height: 24px;
+
+    background-image: url('../img/whiteArrow.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}

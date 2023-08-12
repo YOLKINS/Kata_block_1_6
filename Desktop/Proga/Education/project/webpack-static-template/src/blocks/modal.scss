@@ -1,0 +1,58 @@
+// modal
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: $color__white_transporent_0_96;
+  cursor: pointer;
+
+  .modal__call,
+  .modal__chat {
+    cursor: default;
+    overflow-y: auto;
+    height: 100%;
+
+    @media screen and (min-width: $window__width_pad) {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 440px;
+      height: 100%;
+      box-shadow: 16px 0px 52px 0px $color__box-shadow_sidebar;
+      overflow-y: auto;
+    }
+
+    .header {
+      justify-content: flex-start;
+
+      @media screen and (min-width: $window__width_pad) {
+        position: absolute;
+        left: -50px;
+      }
+
+      @media screen and (min-width: $window__width_desktop) {
+        display: flex;
+      }
+
+      .button-pink {
+        @media screen and (min-width: $window__width_pad) {
+          position: fixed;
+          z-index: 20;
+          right: 472px;
+          top: 24px;
+        }
+
+        @media screen and (min-width: $window__width_desktop) {
+          top: 42px;
+        }
+      }
+    }
+    .container {
+      background: $color__white;
+
+      .title {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}

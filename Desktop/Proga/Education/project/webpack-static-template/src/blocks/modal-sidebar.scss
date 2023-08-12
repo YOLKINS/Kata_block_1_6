@@ -1,0 +1,25 @@
+.modal-sidebar {
+  @media screen and (min-width: $window__width_desktop) {
+    position: sticky !important;
+    inset: initial;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 10 !important;
+
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .sidebar {
+    @media screen and (min-width: $window__width_desktop) {
+      box-shadow: none;
+    }
+  }
+
+  .header {
+    @media screen and (min-width: $window__width_desktop) {
+      display: flex !important;
+    }
+  }
+}

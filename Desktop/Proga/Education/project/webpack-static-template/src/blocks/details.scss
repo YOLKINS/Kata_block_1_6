@@ -1,0 +1,32 @@
+// details
+
+.details {
+  margin: 0px 16px;
+
+  @media screen and (min-width: $window__width_pad) {
+    margin: 0px 24px;
+  }
+
+  @media screen and (min-width: $window__width_desktop) {
+    margin: 0px 32px;
+  }
+
+  .details__box {
+    padding-right: 20px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $window__width_pad) {
+      width: 421px;
+    }
+
+    .details__text {
+      color: $color__black;
+      font-family: 'TT Lakes Regular';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.burger-close {
+  &:hover {
+    img {
+      animation-name: rotate90;
+      animation-duration: 500ms;
+      animation-timing-function: ease-out;
+      animation-fill-mode: backwards;
+      animation-iteration-count: 1;
+    }
+  }
+}
+
+.button-call {
+  &:hover {
+    img {
+      animation-name: rotate15;
+      animation-timing-function: linear;
+      animation-delay: 100ms;
+      animation-duration: 200ms;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 6;
+    }
+  }
+}
